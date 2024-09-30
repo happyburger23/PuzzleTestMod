@@ -1,0 +1,13 @@
+{
+  "stringId": "example-mod:raw_zircon_block",
+
+  "blockStates": {
+    "default": {
+      "modelName": "example-mod:raw_zircon_block",
+
+      "tags": [
+        "tool_pickaxe_effective"
+      ]
+    }
+  }
+}

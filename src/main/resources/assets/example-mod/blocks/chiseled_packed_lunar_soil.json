@@ -1,0 +1,13 @@
+{
+  "stringId": "example-mod:chiseled_packed_lunar_soil",
+
+  "blockStates": {
+    "default": {
+      "modelName": "example-mod:chiseled_packed_lunar_soil",
+
+      "tags": [
+        "tool_pickaxe_effective"
+      ]
+    }
+  }
+}

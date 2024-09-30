@@ -1,0 +1,16 @@
+{
+  "stringId": "example-mod:rail",
+
+  "blockStates": {
+    "default": {
+      "modelName": "example-mod:rail",
+      "isOpaque": false,
+      "isTransparent": true,
+      "lightAttenuation": 0,
+
+      "tags": [
+        "tool_pickaxe_effective"
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "cube",
+  "textures": {
+    "all": {
+      "fileName": "example-mod:chiseled_packed_lunar_soil.png"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "stringId": "example-mod:pedestal",
+
+  "blockStates": {
+    "default": {
+      "modelName": "example-mod:pedestal.json",
+      "isOpaque": false,
+      "isTransparent": false,
+
+      "tags": [
+        "tool_pickaxe_effective"
+      ]
+    }
+  }
+}

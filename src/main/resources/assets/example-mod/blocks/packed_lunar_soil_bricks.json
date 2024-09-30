@@ -1,0 +1,14 @@
+{
+  "stringId": "example-mod:packed_lunar_soil_bricks",
+
+  "blockStates": {
+    "default": {
+      "modelName": "example-mod:packed_lunar_soil_bricks",
+
+      "stateGenerators": ["base:slabs_all", "base:stairs_seamless_all"],
+      "tags": [
+        "tool_pickaxe_effective"
+      ]
+    }
+  }
+}
