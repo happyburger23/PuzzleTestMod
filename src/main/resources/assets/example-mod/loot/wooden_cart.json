@@ -1,8 +1,0 @@
-{
-  "id": "example-mod:wooden_cart",
-  "options": [
-    [{ "id": "base:wood_planks[default]", "max": 5,
-      "id": "example-mod:wooden_cart_item[default]", "max": 1
-    }]
-  ]
-}

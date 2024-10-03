@@ -17,6 +17,7 @@ import finalforeach.cosmicreach.entities.EntityCreator;
 import finalforeach.cosmicreach.util.Identifier;
 import org.example.exmod.block_entities.ExampleBlockEntity;
 import org.example.exmod.blocks.Bedrock;
+import org.example.exmod.blocks.TestBlock;
 import org.example.exmod.commands.Commands;
 import org.example.exmod.entities.WoodenCartEntity;
 import org.example.exmod.items.*;
@@ -57,6 +58,7 @@ public class ExampleMod implements ModInitializer {
 
         //custom items
         IModItem.registerItem(new TestFunctionalItem());
+        IModItem.registerItem(new WoodenCartItem());
 
         IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "raw_zircon")));
         IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "zircon")));
@@ -76,7 +78,7 @@ public class ExampleMod implements ModInitializer {
         event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "diamond_block.json")));
         event.registerBlock(Bedrock::new);
 
-        //event.registerBlock(TestBlock::new);
+        event.registerBlock(TestBlock::new);
 
         //simple blocks
         event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "packed_lunar_soil_bricks.json")));
