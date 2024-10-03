@@ -1,0 +1,14 @@
+{
+  "parent": "cube",
+  "textures": {
+    "top": {
+      "fileName": "example-mod:textures/blocks/distil_top.png"
+    },
+    "bottom": {
+      "fileName": "example-mod:textures/blocks/distil_bottom.png"
+    },
+    "side":{
+      "fileName": "example-mod:textures/blocks/distil_side.png"
+    }
+  }
+}

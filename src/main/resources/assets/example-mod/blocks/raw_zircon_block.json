@@ -5,6 +5,7 @@
     "default": {
       "modelName": "example-mod:raw_zircon_block",
 
+      "stateGenerators": ["base:slabs_all", "base:stairs_seamless_all"],
       "tags": [
         "tool_pickaxe_effective"
       ]

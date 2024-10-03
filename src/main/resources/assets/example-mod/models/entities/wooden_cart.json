@@ -1,6 +1,17 @@
 {
-	"id": "Cosmic Reach Model Editor",
+	"id": "example-mod:wooden_cart",
 	"texture_width": 128,
 	"texture_height": 128,
-	"bones": []
+	"bones": [{
+			"name": "cart_group",
+			"pivot": [10,1,17],
+			"cubes": [
+				{"origin":[5,1,-9],"size":[1,8,18],"uv":[38,19],"pivot":[11,1,0]},
+				{"origin":[-6,0,-9],"size":[12,1,18],"uv":[0,0]}, 
+				{"origin":[-6,1,-9],"size":[1,8,18],"uv":[0,19],"pivot":[0,1,0]}, 
+				{"origin":[-5,1,-9],"size":[10,8,1],"uv":[0,45],"pivot":[10,1,0]}, 
+				{"origin":[-5,1,8],"size":[10,8,1],"uv":[22,45],"pivot":[10,1,17]}
+			]
+		}
+	]
 }

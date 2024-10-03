@@ -1,0 +1,13 @@
+{
+  "stringId": "example-mod:distil",
+
+  "blockStates": {
+    "default": {
+      "modelName": "example-mod:distil",
+
+      "tags": [
+        "tool_pickaxe_effective"
+      ]
+    }
+  }
+}

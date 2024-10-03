@@ -1,0 +1,13 @@
+{
+  "stringId": "example-mod:bronze_panel",
+
+  "blockStates": {
+    "default": {
+      "modelName": "example-mod:bronze_panel",
+
+      "tags": [
+        "tool_pickaxe_effective"
+      ]
+    }
+  }
+}

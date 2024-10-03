@@ -13,11 +13,12 @@ import com.github.puzzle.game.items.IModItem;
 import com.github.puzzle.game.items.impl.BasicItem;
 import com.github.puzzle.game.items.impl.BasicTool;
 import com.github.puzzle.loader.entrypoint.interfaces.ModInitializer;
+import finalforeach.cosmicreach.entities.EntityCreator;
 import finalforeach.cosmicreach.util.Identifier;
 import org.example.exmod.block_entities.ExampleBlockEntity;
 import org.example.exmod.blocks.Bedrock;
-import org.example.exmod.blocks.custom.*;
 import org.example.exmod.commands.Commands;
+import org.example.exmod.entities.WoodenCartEntity;
 import org.example.exmod.items.*;
 import org.example.exmod.worldgen.ExampleZoneGenerator;
 import org.greenrobot.eventbus.Subscribe;
@@ -41,6 +42,14 @@ public class ExampleMod implements ModInitializer {
 
         Commands.register();
 
+        //block entity registration
+        //TestBlockEntity.register();
+
+        //screen init
+        //BasePuzzleScreen.registerScreen(TestBlockEntity.id, new TestScreen());
+
+        EntityCreator.registerEntityCreator(WoodenCartEntity.ENTITY_TYPE_ID, WoodenCartEntity::new);
+
         IModItem.registerItem(new ExamplePickaxe());
         IModItem.registerItem(new ExampleCyclingItem());
         IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "example_item")));
@@ -55,6 +64,10 @@ public class ExampleMod implements ModInitializer {
         IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "steel_ingot")));
         IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "steel_dust")));
         IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "graphite")));
+
+        IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "bronze_ingot")));
+
+        IModItem.registerItem(new BasicItem(Identifier.of(Constants.MOD_ID, "wooden_cart_item")));
     }
 
     //BLOCK REGISTRY
@@ -63,13 +76,16 @@ public class ExampleMod implements ModInitializer {
         event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "diamond_block.json")));
         event.registerBlock(Bedrock::new);
 
-        //complex blocks
-        event.registerBlock(PackedLunarSoilBricks::new);
-        event.registerBlock(ZirconBlock::new);
-        event.registerBlock(RawZirconBlock::new);
+        //event.registerBlock(TestBlock::new);
 
         //simple blocks
+        event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "packed_lunar_soil_bricks.json")));
         event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "chiseled_packed_lunar_soil.json")));
+        event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "zircon_block.json")));
+        event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "raw_zircon_block.json")));
+
+        event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "distil.json")));
+        event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "bronze_panel.json")));
 
         //blocks with custom models
         event.registerBlock(() -> new DataModBlock(Identifier.of(Constants.MOD_ID, "rail.json")));
